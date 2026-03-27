@@ -1,0 +1,11 @@
+/* Fuentes personalizadas de AdoptApp */
+
+/* MangoGrotesque - Fuente para la navegación */
+@import url('../imports/MangoGrotesque-Bold.css');
+
+/* Nohemi - Fuente principal para todo el texto */
+@import url('../imports/Nohemi-Regular.css');
+@import url('../imports/Nohemi-Medium.css');
+
+/* Fallback fonts de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Urbanist:wght@400;600;700&display=swap');
