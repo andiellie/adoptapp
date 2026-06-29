@@ -1,11 +1,39 @@
-/* Fuentes personalizadas de AdoptApp */
+/* Fuentes de AdoptApp: Unbounded (marca/headings, auto-hospedada),
+   Helvetica Roman (cuerpo, auto-hospedada), Inter (un componente Figma, Google Fonts) */
 
-/* MangoGrotesque - Fuente para la navegación */
-@import url('../imports/MangoGrotesque-Bold.css');
+@font-face {
+  font-family: 'Unbounded';
+  src: url('../assets/fonts/Unbounded-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+}
 
-/* Nohemi - Fuente principal para todo el texto */
-@import url('../imports/Nohemi-Regular.css');
-@import url('../imports/Nohemi-Medium.css');
+@font-face {
+  font-family: 'Unbounded';
+  src: url('../assets/fonts/Unbounded-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
 
-/* Fallback fonts de Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Urbanist:wght@400;600;700&display=swap');
+@font-face {
+  font-family: 'Unbounded';
+  src: url('../assets/fonts/Unbounded-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('../assets/fonts/Unbounded-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Roman';
+  src: url('../assets/fonts/HelveticaNeueRoman.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');

@@ -20,7 +20,7 @@ export function AdoptButton({ petId, className = "" }: AdoptButtonProps) {
       onClick={handleClick}
       className={`relative w-full bg-[#f0cadb] hover:bg-[#e8bcd1] rounded-[40px] h-[60px] flex items-center justify-center px-8 transition-all hover:scale-[1.02] active:scale-[0.98] shadow-md hover:shadow-lg ${className}`}
     >
-      <span className="font-['Neue Haas Grotesk Display',sans-serif] font-medium text-[26px] md:text-[32px] text-[#1e1e1e] leading-normal">
+      <span className="font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] font-medium text-[26px] md:text-[32px] text-[#1e1e1e] leading-normal">
         Quiero adoptarlo
       </span>
       

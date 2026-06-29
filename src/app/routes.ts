@@ -10,6 +10,7 @@ import { Contacto } from "./pages/Contacto";
 import { AdoptionForm } from "./pages/AdoptionForm";
 import { Requisitos } from "./pages/Requisitos";
 import { NotFound } from "./pages/NotFound";
+import { DesignSystem } from "./pages/DesignSystem";
 
 export const router = createBrowserRouter([
   {
@@ -25,6 +26,7 @@ export const router = createBrowserRouter([
       { path: "adopta/:id/formulario", Component: AdoptionForm },
       { path: "requisitos", Component: Requisitos },
       { path: "contacto", Component: Contacto },
+      { path: "design-system", Component: DesignSystem },
       { path: "*", Component: NotFound }
     ]
   }

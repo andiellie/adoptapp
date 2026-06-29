@@ -144,7 +144,7 @@ export function FilterBar({ filters, onFilterChange, selectedSpecies }: FilterBa
         <div className="flex flex-col gap-3 sm:gap-4">
           {/* Primera fila - Título y Limpiar */}
           <div className="flex items-center justify-between">
-            <h3 className="font-['Neue Haas Grotesk Display',sans-serif] text-[18px] sm:text-[20px] text-[#1e1e1e]">
+            <h3 className="font-['Unbounded',sans-serif] font-normal text-[18px] sm:text-[20px] text-[#1e1e1e]">
               Filtros {activeFiltersCount > 0 && `(${activeFiltersCount})`}
             </h3>
             {/* Botón Limpiar */}
@@ -163,7 +163,7 @@ export function FilterBar({ filters, onFilterChange, selectedSpecies }: FilterBa
                     temperaments: [],
                   })
                 }
-                className="bg-[#c8566e] text-white px-4 sm:px-5 py-1.5 sm:py-2 rounded-[12px] font-['Neue Haas Grotesk Display',sans-serif] text-[11px] sm:text-[13px] hover:bg-[#b04558] transition-colors whitespace-nowrap"
+                className="bg-[#c8566e] text-white px-4 sm:px-5 py-1.5 sm:py-2 rounded-[12px] font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[11px] sm:text-[13px] hover:bg-[#b04558] transition-colors whitespace-nowrap"
               >
                 Limpiar Todo
               </button>
@@ -174,7 +174,7 @@ export function FilterBar({ filters, onFilterChange, selectedSpecies }: FilterBa
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 lg:gap-6">
             {/* Género */}
             <div className="flex items-center gap-2">
-              <span className="font-['Neue Haas Grotesk Display',sans-serif] text-[12px] sm:text-[14px] text-[#666] whitespace-nowrap">Género:</span>
+              <span className="font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[12px] sm:text-[14px] text-[#666] whitespace-nowrap">Género:</span>
               <div className="flex gap-2 sm:gap-3">
                 <button
                   onClick={() => updateFilter("gender", filters.gender === "macho" ? null : "macho")}
@@ -201,13 +201,13 @@ export function FilterBar({ filters, onFilterChange, selectedSpecies }: FilterBa
 
             {/* Edad */}
             <div className="flex items-center gap-2">
-              <span className="font-['Neue Haas Grotesk Display',sans-serif] text-[12px] sm:text-[14px] text-[#666] whitespace-nowrap">Edad:</span>
+              <span className="font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[12px] sm:text-[14px] text-[#666] whitespace-nowrap">Edad:</span>
               <div className="flex gap-1.5 sm:gap-2">
                 {["cachorro", "adulto", "senior"].map((age) => (
                   <button
                     key={age}
                     onClick={() => updateFilter("ageCategory", filters.ageCategory === age ? null : age)}
-                    className={`px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-[15px] font-['Neue Haas Grotesk Display',sans-serif] text-[11px] sm:text-[13px] transition-all whitespace-nowrap ${
+                    className={`px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-[15px] font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[11px] sm:text-[13px] transition-all whitespace-nowrap ${
                       filters.ageCategory === age
                         ? "bg-[#4074d4] text-white scale-105"
                         : "bg-white text-[#666] hover:bg-[#e8e8e8]"
@@ -221,7 +221,7 @@ export function FilterBar({ filters, onFilterChange, selectedSpecies }: FilterBa
 
             {/* Tamaño */}
             <div className="flex items-center gap-2">
-              <span className="font-['Neue Haas Grotesk Display',sans-serif] text-[12px] sm:text-[14px] text-[#666] whitespace-nowrap">Tamaño:</span>
+              <span className="font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[12px] sm:text-[14px] text-[#666] whitespace-nowrap">Tamaño:</span>
               <div className="flex items-end gap-1.5 sm:gap-2">
                 {selectedSpecies === "perro" ? (
                   // Iconos de perro para tamaño
@@ -279,7 +279,7 @@ export function FilterBar({ filters, onFilterChange, selectedSpecies }: FilterBa
 
             {/* Energía */}
             <div className="flex items-center gap-2">
-              <span className="font-['Neue Haas Grotesk Display',sans-serif] text-[12px] sm:text-[14px] text-[#666] whitespace-nowrap">Energía:</span>
+              <span className="font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[12px] sm:text-[14px] text-[#666] whitespace-nowrap">Energía:</span>
               <div className="flex items-center gap-1.5 sm:gap-2">
                 {[1, 2, 3].map((level) => (
                   <button
@@ -307,7 +307,7 @@ export function FilterBar({ filters, onFilterChange, selectedSpecies }: FilterBa
             {/* Botón Distancia */}
             <button
               onClick={() => setExpandedSection(expandedSection === "distancia" ? null : "distancia")}
-              className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-[12px] font-['Neue Haas Grotesk Display',sans-serif] text-[11px] sm:text-[13px] transition-all whitespace-nowrap ${
+              className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-[12px] font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[11px] sm:text-[13px] transition-all whitespace-nowrap ${
                 filters.distance
                   ? "bg-[#4074d4] text-white"
                   : "bg-white text-[#666] hover:bg-[#e8e8e8]"
@@ -320,7 +320,7 @@ export function FilterBar({ filters, onFilterChange, selectedSpecies }: FilterBa
             {/* Botón Temperamento */}
             <button
               onClick={() => setExpandedSection(expandedSection === "temperamento" ? null : "temperamento")}
-              className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-[12px] font-['Neue Haas Grotesk Display',sans-serif] text-[11px] sm:text-[13px] transition-all whitespace-nowrap ${
+              className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-[12px] font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[11px] sm:text-[13px] transition-all whitespace-nowrap ${
                 filters.temperaments.length > 0
                   ? "bg-[#c8566e] text-white"
                   : "bg-white text-[#666] hover:bg-[#e8e8e8]"
@@ -333,7 +333,7 @@ export function FilterBar({ filters, onFilterChange, selectedSpecies }: FilterBa
             {/* Botón Raza */}
             <button
               onClick={() => setExpandedSection(expandedSection === "raza" ? null : "raza")}
-              className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-[12px] font-['Neue Haas Grotesk Display',sans-serif] text-[11px] sm:text-[13px] transition-all whitespace-nowrap ${
+              className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-[12px] font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[11px] sm:text-[13px] transition-all whitespace-nowrap ${
                 filters.breeds.length > 0
                   ? "bg-[#4074d4] text-white"
                   : "bg-white text-[#666] hover:bg-[#e8e8e8]"
@@ -359,7 +359,7 @@ export function FilterBar({ filters, onFilterChange, selectedSpecies }: FilterBa
                 <button
                   key={value}
                   onClick={() => updateFilter("distance", filters.distance === value ? null : value)}
-                  className={`px-4 py-2 rounded-[20px] font-['Neue Haas Grotesk Display',sans-serif] text-[13px] transition-all ${
+                  className={`px-4 py-2 rounded-[20px] font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[13px] transition-all ${
                     filters.distance === value
                       ? "bg-[#4074d4] text-white scale-105"
                       : "bg-[#f5f5f5] text-[#1e1e1e] hover:bg-[#ebebeb]"
@@ -385,7 +385,7 @@ export function FilterBar({ filters, onFilterChange, selectedSpecies }: FilterBa
                 <button
                   key={temp}
                   onClick={() => toggleTemperament(temp)}
-                  className={`px-4 py-2 rounded-[20px] font-['Neue Haas Grotesk Display',sans-serif] text-[13px] transition-all ${
+                  className={`px-4 py-2 rounded-[20px] font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[13px] transition-all ${
                     filters.temperaments.includes(temp)
                       ? "bg-[#c8566e] text-white scale-105"
                       : "bg-[#f5f5f5] text-[#1e1e1e] hover:bg-[#ebebeb]"
@@ -408,7 +408,7 @@ export function FilterBar({ filters, onFilterChange, selectedSpecies }: FilterBa
                     <button
                       key={breed}
                       onClick={() => toggleBreed(breed)}
-                      className={`px-4 py-2 rounded-[20px] font-['Neue Haas Grotesk Display',sans-serif] text-[13px] transition-all ${
+                      className={`px-4 py-2 rounded-[20px] font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[13px] transition-all ${
                         filters.breeds.includes(breed)
                           ? "bg-[#4074d4] text-white scale-105"
                           : "bg-[#f5f5f5] text-[#1e1e1e] hover:bg-[#ebebeb]"
@@ -421,7 +421,7 @@ export function FilterBar({ filters, onFilterChange, selectedSpecies }: FilterBa
                     <button
                       key={breed}
                       onClick={() => toggleBreed(breed)}
-                      className={`px-4 py-2 rounded-[20px] font-['Neue Haas Grotesk Display',sans-serif] text-[13px] transition-all ${
+                      className={`px-4 py-2 rounded-[20px] font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[13px] transition-all ${
                         filters.breeds.includes(breed)
                           ? "bg-[#4074d4] text-white scale-105"
                           : "bg-[#f5f5f5] text-[#1e1e1e] hover:bg-[#ebebeb]"

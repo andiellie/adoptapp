@@ -5,7 +5,7 @@ interface SpeciesTabsProps {
 
 export function SpeciesTabs({ selectedSpecies, onSelectSpecies }: SpeciesTabsProps) {
   return (
-    <div className="max-w-[1728px] mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-8">
+    <div className="max-w-[1728px] mx-auto px-4 sm:px-6 lg:px-[112px] pt-6 sm:pt-8">
       <div className="flex justify-center border-b-2 border-[#e8e8e8]">
         {/* Tab Perros */}
         <button

@@ -41,7 +41,7 @@ export function Navigation() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.06)]">
-      <div className="max-w-[1728px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1728px] mx-auto px-4 sm:px-6 lg:px-[112px]">
         <div className="flex items-center justify-between h-[70px] sm:h-[80px] lg:h-[90px]">
           {/* Logo */}
           <Link to="/" className="relative group flex-shrink-0">
@@ -62,11 +62,11 @@ export function Navigation() {
                 to={item.path}
                 className={`
                   relative px-4 py-2.5 rounded-[18px]
-                  font-['MangoGrotesque',sans-serif] font-bold
+                  font-['Unbounded',sans-serif] font-normal
                   text-[14px] tracking-[0.3px]
                   transition-all duration-200
                   ${isActive(item.path) 
-                    ? 'text-[#4074d4]' 
+                    ? 'text-[#1D1D1D]'
                     : 'text-[#1e1e1e] hover:text-[#4074d4]'
                   }
                 `}
@@ -80,7 +80,7 @@ export function Navigation() {
               to="/adopta"
               className={`
                 ml-3 px-6 py-2.5 rounded-[25px]
-                font-['MangoGrotesque',sans-serif] font-bold
+                font-['Unbounded',sans-serif] font-normal
                 text-[14px] tracking-[0.3px]
                 transition-all duration-300 flex items-center gap-2
                 ${isActive("/adopta")
@@ -102,11 +102,11 @@ export function Navigation() {
                 to={item.path}
                 className={`
                   relative px-3 py-2 rounded-[18px]
-                  font-['MangoGrotesque',sans-serif] font-bold
+                  font-['Unbounded',sans-serif] font-normal
                   text-[13px] tracking-[0.3px]
                   transition-all duration-200
                   ${isActive(item.path) 
-                    ? 'text-[#4074d4]' 
+                    ? 'text-[#1D1D1D]'
                     : 'text-[#1e1e1e] hover:text-[#4074d4]'
                   }
                 `}
@@ -120,7 +120,7 @@ export function Navigation() {
               to="/adopta"
               className={`
                 ml-2 px-5 py-2 rounded-[25px]
-                font-['MangoGrotesque',sans-serif] font-bold
+                font-['Unbounded',sans-serif] font-normal
                 text-[13px] tracking-[0.3px]
                 transition-all duration-300 flex items-center gap-1.5
                 ${isActive("/adopta")
@@ -178,11 +178,11 @@ export function Navigation() {
               onClick={() => setMobileMenuOpen(false)}
               className={`
                 block px-5 sm:px-6 py-3.5 sm:py-4 rounded-[20px]
-                font-['MangoGrotesque',sans-serif] font-bold
+                font-['Unbounded',sans-serif] font-normal
                 text-[15px] sm:text-[16px] tracking-[0.3px]
                 transition-all duration-200
                 ${isActive(item.path) 
-                  ? 'text-[#4074d4]' 
+                  ? 'text-[#1D1D1D]'
                   : 'text-[#1e1e1e] hover:text-[#4074d4]'
                 }
               `}
@@ -196,7 +196,7 @@ export function Navigation() {
             onClick={() => setMobileMenuOpen(false)}
             className={`
               block px-5 sm:px-6 py-3.5 sm:py-4 rounded-[20px]
-              font-['MangoGrotesque',sans-serif] font-bold
+              font-['Unbounded',sans-serif] font-normal
               text-[15px] sm:text-[16px] tracking-[0.3px]
               transition-all duration-300 flex items-center justify-center gap-2
               ${isActive("/adopta")

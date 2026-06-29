@@ -77,7 +77,7 @@ export function Adopta() {
       />
 
       {/* Contenido Principal */}
-      <div className="max-w-[1728px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-[1728px] mx-auto px-4 sm:px-6 lg:px-[112px] py-8">
         {/* Pets Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-12">
           {filteredPets.map((pet) => (
@@ -88,7 +88,7 @@ export function Adopta() {
             >
               <div className="bg-white rounded-[50px] overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 relative">
                 {/* Distance Badge */}
-                <div className="absolute top-3 right-3 bg-[#4074d4] text-white rounded-full px-3 py-1 text-[12px] font-['Neue Haas Grotesk Display',sans-serif] font-bold z-10 shadow-md">
+                <div className="absolute top-3 right-3 bg-[#4074d4] text-white rounded-full px-3 py-1 text-[12px] font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] font-bold z-10 shadow-md">
                   📍 {pet.distance}km
                 </div>
                 
@@ -101,20 +101,20 @@ export function Adopta() {
                 </div>
                 <div className="p-4">
                   <div className="text-center mb-3">
-                    <h3 className="font-['Neue Haas Grotesk Display',sans-serif] font-semibold text-[16px] text-[#1e1e1e] mb-1">
+                    <h3 className="font-['Unbounded',sans-serif] font-semibold text-[16px] text-[#1e1e1e] mb-1">
                       {pet.name}
                     </h3>
-                    <p className="font-['Neue Haas Grotesk Display',sans-serif] text-[14px] text-[#666]">
+                    <p className="font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[14px] text-[#666]">
                       {pet.breed}
                     </p>
                   </div>
                   
                   {/* Quick Info Tags */}
                   <div className="flex gap-2 justify-center flex-wrap">
-                    <span className="bg-[#f9fcf3] rounded-full px-2 py-1 text-[10px] font-['Neue Haas Grotesk Display',sans-serif] font-medium text-[#1e1e1e]">
+                    <span className="bg-[#f9fcf3] rounded-full px-2 py-1 text-[10px] font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] font-medium text-[#1e1e1e]">
                       {pet.ageCategory === "cachorro" ? "🐾 Cachorro" : pet.ageCategory === "senior" ? "👴 Senior" : "🐕 Adulto"}
                     </span>
-                    <span className="bg-[#fff5f0] rounded-full px-2 py-1 text-[10px] font-['Neue Haas Grotesk Display',sans-serif] font-medium text-[#1e1e1e]">
+                    <span className="bg-[#fff5f0] rounded-full px-2 py-1 text-[10px] font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] font-medium text-[#1e1e1e]">
                       {pet.size === "mini" ? "Mini" : pet.size === "chico" ? "Chico" : pet.size === "mediano" ? "Med" : "Grande"}
                     </span>
                   </div>
@@ -128,7 +128,7 @@ export function Adopta() {
         {filteredPets.length === 0 && (
           <div className="text-center py-20">
             <Heart className="w-16 h-16 text-[#c8566e] mx-auto mb-4" />
-            <p className="font-['Neue Haas Grotesk Display',sans-serif] font-semibold text-[24px] text-[#1e1e1e]">
+            <p className="font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] font-semibold text-[24px] text-[#1e1e1e]">
               No se encontraron mascotas con estos filtros
             </p>
             <button
@@ -145,7 +145,7 @@ export function Adopta() {
                   temperaments: [],
                 });
               }}
-              className="mt-4 text-[#4074d4] font-['Neue Haas Grotesk Display',sans-serif] font-bold hover:underline"
+              className="mt-4 text-[#4074d4] font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] font-bold hover:underline"
             >
               Limpiar filtros
             </button>

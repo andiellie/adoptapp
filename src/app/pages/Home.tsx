@@ -8,11 +8,11 @@ export function Home() {
 
   return (
     <div className="min-h-screen bg-white pt-[70px] sm:pt-[80px] lg:pt-[90px]">
-      <div className="max-w-[1728px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1728px] mx-auto px-4 sm:px-6 lg:px-[112px]">
         <div className="relative min-h-[600px] sm:min-h-[700px] lg:min-h-[800px] flex items-center">
           {/* Left Content */}
           <div className="w-full lg:w-1/2 z-10 relative">
-            <h1 className="font-['Unbounded:Medium',sans-serif] font-medium text-[36px] sm:text-[48px] lg:text-[60px] xl:text-[72px] leading-tight text-[#1e1e1e] tracking-[-2px] sm:tracking-[-3px] lg:tracking-[-5.04px] uppercase mb-6 sm:mb-8">
+            <h1 className="font-['Unbounded',sans-serif] font-medium text-[60px] leading-tight text-[#1e1e1e] tracking-[-2px] mb-6 sm:mb-8">
               Conecta con
               <br />
               tu nuevo
@@ -22,20 +22,20 @@ export function Home() {
               de vida
             </h1>
             
-            <p className="font-['Neue Haas Grotesk Display',sans-serif] font-semibold text-[16px] sm:text-[20px] lg:text-[24px] text-[#1e1e1e] mb-6 sm:mb-8 max-w-[545px]">
+            <p className="font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] font-semibold text-[16px] sm:text-[20px] lg:text-[24px] text-[#1e1e1e] mb-6 sm:mb-8 max-w-[545px]">
               AdoptApp crea conciencia sobre el bienestar animal de la mano de los refugios de la comunidad local.
             </p>
 
             {/* Contenido expandible */}
             {showMore && (
               <div className="mb-6 sm:mb-8 max-w-[545px] space-y-3 sm:space-y-4 animate-in fade-in slide-in-from-top-2 duration-300">
-                <p className="font-['Neue Haas Grotesk Display',sans-serif] text-[14px] sm:text-[16px] lg:text-[18px] text-[#1e1e1e] leading-relaxed">
+                <p className="font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[14px] sm:text-[16px] lg:text-[18px] text-[#1e1e1e] leading-relaxed">
                   Desde 2020, hemos conectado a más de 500 mascotas con familias amorosas. Trabajamos en colaboración con 15 refugios locales, brindando atención veterinaria, rehabilitación y preparación para que cada animal encuentre su hogar perfecto.
                 </p>
-                <p className="font-['Neue Haas Grotesk Display',sans-serif] text-[14px] sm:text-[16px] lg:text-[18px] text-[#1e1e1e] leading-relaxed">
+                <p className="font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[14px] sm:text-[16px] lg:text-[18px] text-[#1e1e1e] leading-relaxed">
                   Nuestro proceso incluye evaluaciones de comportamiento, vacunación completa, esterilización y seguimiento post-adopción. Creemos que cada mascota merece una segunda oportunidad y cada familia merece encontrar a su compañero ideal.
                 </p>
-                <p className="font-['Neue Haas Grotesk Display',sans-serif] text-[14px] sm:text-[16px] lg:text-[18px] text-[#1e1e1e] leading-relaxed">
+                <p className="font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[14px] sm:text-[16px] lg:text-[18px] text-[#1e1e1e] leading-relaxed">
                   Únete a nuestra comunidad de más de 1000 familias felices que han transformado vidas a través de la adopción responsable.
                 </p>
               </div>
@@ -43,7 +43,7 @@ export function Home() {
             
             <button
               onClick={() => setShowMore(!showMore)}
-              className="inline-block bg-[#4074d4] text-[#fcf9e5] font-['Neue Haas Grotesk Display',sans-serif] font-bold text-[16px] sm:text-[20px] lg:text-[24px] px-8 sm:px-10 lg:px-12 py-3 sm:py-3.5 lg:py-4 rounded-[12px] shadow-[0px_4px_10.6px_0px_rgba(0,0,0,0.13)] hover:bg-[#3563b8] transition-colors"
+              className="inline-block bg-[#4074d4] text-[#fcf9e5] font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] font-bold text-[16px] sm:text-[20px] lg:text-[24px] px-8 sm:px-10 lg:px-12 py-3 sm:py-3.5 lg:py-4 rounded-[12px] shadow-[0px_4px_10.6px_0px_rgba(0,0,0,0.13)] hover:bg-[#3563b8] transition-colors"
             >
               {showMore ? "Ver menos" : "Saber más"}
             </button>
@@ -79,7 +79,7 @@ export function Home() {
             <div className="text-[36px] sm:text-[42px] lg:text-[48px] font-['Unbounded:Medium',sans-serif] font-medium text-[#4074d4] mb-2">
               500+
             </div>
-            <p className="font-['Neue Haas Grotesk Display',sans-serif] text-[16px] sm:text-[18px] lg:text-[20px] text-[#1e1e1e]">
+            <p className="font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[16px] sm:text-[18px] lg:text-[20px] text-[#1e1e1e]">
               Mascotas adoptadas
             </p>
           </div>
@@ -88,7 +88,7 @@ export function Home() {
             <div className="text-[36px] sm:text-[42px] lg:text-[48px] font-['Unbounded:Medium',sans-serif] font-medium text-[#c8566e] mb-2">
               15+
             </div>
-            <p className="font-['Neue Haas Grotesk Display',sans-serif] text-[16px] sm:text-[18px] lg:text-[20px] text-[#1e1e1e]">
+            <p className="font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[16px] sm:text-[18px] lg:text-[20px] text-[#1e1e1e]">
               Refugios asociados
             </p>
           </div>
@@ -97,7 +97,7 @@ export function Home() {
             <div className="text-[36px] sm:text-[42px] lg:text-[48px] font-['Unbounded:Medium',sans-serif] font-medium text-[#7db7d9] mb-2">
               1000+
             </div>
-            <p className="font-['Neue Haas Grotesk Display',sans-serif] text-[16px] sm:text-[18px] lg:text-[20px] text-[#1e1e1e]">
+            <p className="font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[16px] sm:text-[18px] lg:text-[20px] text-[#1e1e1e]">
               Familias felices
             </p>
           </div>
@@ -105,23 +105,23 @@ export function Home() {
 
         {/* Mission Section */}
         <div className="py-12 sm:py-16 lg:py-20 bg-[#ebe8d6] rounded-[30px] sm:rounded-[40px] lg:rounded-[55px] px-6 sm:px-10 lg:px-16 mb-12 sm:mb-16 lg:mb-20">
-          <h2 className="font-['Unbounded:Medium',sans-serif] font-medium text-[32px] sm:text-[40px] lg:text-[48px] text-[#1e1e1e] text-center mb-8 sm:mb-10 lg:mb-12 uppercase animate-[fadeInUp_0.6s_ease-out]">
+          <h2 className="font-['Unbounded',sans-serif] font-medium text-[32px] sm:text-[40px] lg:text-[48px] text-[#1e1e1e] text-center mb-12 sm:mb-16 lg:mb-20 animate-[fadeInUp_0.6s_ease-out]">
             Nuestra Misión
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             <div className="animate-[fadeInLeft_0.8s_ease-out]">
-              <p className="font-['Neue Haas Grotesk Display',sans-serif] font-semibold text-[16px] sm:text-[18px] lg:text-[20px] text-[#1e1e1e] mb-4 sm:mb-6">
+              <p className="font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] font-semibold text-[16px] sm:text-[18px] lg:text-[20px] text-[#1e1e1e] mb-4 sm:mb-6">
                 Somos una asociación que trabaja de la mano de los refugios de la comunidad. Rescatamos animales en situación de calle para rehabilitarlos y posteriormente buscarles un hogar.
               </p>
-              <p className="font-['Neue Haas Grotesk Display',sans-serif] text-[14px] sm:text-[16px] lg:text-[18px] text-[#1e1e1e]">
+              <p className="font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[14px] sm:text-[16px] lg:text-[18px] text-[#1e1e1e]">
                 Creemos que cada animal merece una segunda oportunidad y una familia que los ame. Trabajamos incansablemente para crear conciencia sobre el bienestar animal y promover la adopción responsable.
               </p>
             </div>
             <div className="bg-white rounded-[25px] sm:rounded-[32px] lg:rounded-[39px] p-6 sm:p-7 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 animate-[fadeInRight_0.8s_ease-out]">
-              <h3 className="font-['Neue Haas Grotesk Display',sans-serif] font-bold text-[20px] sm:text-[22px] lg:text-[24px] text-[#1e1e1e] mb-3 sm:mb-4">
+              <h3 className="font-['Unbounded',sans-serif] font-semibold text-[20px] sm:text-[22px] lg:text-[24px] text-[#1e1e1e] mb-3 sm:mb-4">
                 ¿Cómo puedes ayudar?
               </h3>
-              <ul className="space-y-2 sm:space-y-3 font-['Neue Haas Grotesk Display',sans-serif] text-[14px] sm:text-[15px] lg:text-[16px] text-[#1e1e1e]">
+              <ul className="space-y-2 sm:space-y-3 font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] text-[14px] sm:text-[15px] lg:text-[16px] text-[#1e1e1e]">
                 <li className="flex items-start group animate-[slideInRight_0.6s_ease-out_0.2s_both] hover:translate-x-2 transition-transform duration-300">
                   <span className="text-[#4074d4] mr-2 group-hover:scale-125 transition-transform duration-300">•</span>
                   Adopta una mascota y dale un hogar
@@ -141,7 +141,7 @@ export function Home() {
               </ul>
               <Link
                 to="/requisitos"
-                className="mt-4 sm:mt-5 lg:mt-6 inline-block text-[#4074d4] font-['Neue Haas Grotesk Display',sans-serif] font-bold text-[14px] sm:text-[15px] lg:text-[16px] hover:underline hover:translate-x-2 transition-all duration-300"
+                className="mt-4 sm:mt-5 lg:mt-6 inline-block text-[#4074d4] font-['Helvetica_Roman',sans-serif] tracking-[-0.02em] font-bold text-[14px] sm:text-[15px] lg:text-[16px] hover:underline hover:translate-x-2 transition-all duration-300"
               >
                 Ver requisitos para adoptar →
               </Link>

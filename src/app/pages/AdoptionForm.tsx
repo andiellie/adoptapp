@@ -57,7 +57,7 @@ export function AdoptionForm() {
         <div key={step} className="flex items-center">
           <div
             className={`
-              w-12 h-12 rounded-full flex items-center justify-center font-['Urbanist:Bold',sans-serif] text-[18px] transition-colors
+              w-12 h-12 rounded-full flex items-center justify-center font-['Helvetica_Roman',sans-serif] text-[18px] transition-colors
               ${currentStep >= step 
                 ? 'bg-[#4074d4] text-white' 
                 : 'bg-[#f5f5f5] text-[#666]'
@@ -76,13 +76,13 @@ export function AdoptionForm() {
 
   return (
     <div className="min-h-screen bg-white pt-[70px] sm:pt-[80px] lg:pt-[90px]">
-      <div className="max-w-[900px] mx-auto px-8 py-12">
+      <div className="max-w-[900px] mx-auto px-4 sm:px-6 lg:px-[112px] py-12">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="font-['Unbounded:Medium',sans-serif] font-medium text-[48px] text-[#1e1e1e] mb-4">
+          <h1 className="font-['Unbounded',sans-serif] font-normal text-[60px] text-[#1e1e1e] mb-4">
             Formulario de Adopción
           </h1>
-          <p className="font-['Urbanist:SemiBold',sans-serif] text-[20px] text-[#666]">
+          <p className="font-['Helvetica_Roman',sans-serif] text-[20px] text-[#666]">
             Para adoptar a <span className="text-[#4074d4]">{pet.name}</span>
           </p>
         </div>
@@ -93,12 +93,12 @@ export function AdoptionForm() {
           {/* Step 1: Personal Information */}
           {currentStep === 1 && (
             <div className="space-y-6">
-              <h2 className="font-['Urbanist:Bold',sans-serif] font-bold text-[28px] text-[#1e1e1e] mb-6">
+              <h2 className="font-['Unbounded',sans-serif] font-semibold text-[28px] text-[#1e1e1e] mb-6">
                 Información Personal
               </h2>
               
               <div>
-                <label className="block font-['Urbanist:SemiBold',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
+                <label className="block font-['Helvetica_Roman',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
                   Nombre completo *
                 </label>
                 <input
@@ -106,14 +106,14 @@ export function AdoptionForm() {
                   required
                   value={formData.fullName}
                   onChange={(e) => setFormData({...formData, fullName: e.target.value})}
-                  className="w-full bg-white rounded-[15px] px-4 py-3 font-['Urbanist:Regular',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
+                  className="w-full bg-white rounded-[15px] px-4 py-3 font-['Helvetica_Roman',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
                   placeholder="Juan Pérez García"
                 />
               </div>
 
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="block font-['Urbanist:SemiBold',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
+                  <label className="block font-['Helvetica_Roman',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
                     Email *
                   </label>
                   <input
@@ -121,13 +121,13 @@ export function AdoptionForm() {
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
-                    className="w-full bg-white rounded-[15px] px-4 py-3 font-['Urbanist:Regular',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
+                    className="w-full bg-white rounded-[15px] px-4 py-3 font-['Helvetica_Roman',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
                     placeholder="juan@email.com"
                   />
                 </div>
 
                 <div>
-                  <label className="block font-['Urbanist:SemiBold',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
+                  <label className="block font-['Helvetica_Roman',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
                     Teléfono *
                   </label>
                   <input
@@ -135,14 +135,14 @@ export function AdoptionForm() {
                     required
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                    className="w-full bg-white rounded-[15px] px-4 py-3 font-['Urbanist:Regular',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
+                    className="w-full bg-white rounded-[15px] px-4 py-3 font-['Helvetica_Roman',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
                     placeholder="(55) 1234-5678"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block font-['Urbanist:SemiBold',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
+                <label className="block font-['Helvetica_Roman',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
                   Dirección completa *
                 </label>
                 <input
@@ -150,14 +150,14 @@ export function AdoptionForm() {
                   required
                   value={formData.address}
                   onChange={(e) => setFormData({...formData, address: e.target.value})}
-                  className="w-full bg-white rounded-[15px] px-4 py-3 font-['Urbanist:Regular',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
+                  className="w-full bg-white rounded-[15px] px-4 py-3 font-['Helvetica_Roman',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
                   placeholder="Calle, número, colonia"
                 />
               </div>
 
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="block font-['Urbanist:SemiBold',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
+                  <label className="block font-['Helvetica_Roman',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
                     Ciudad *
                   </label>
                   <input
@@ -165,13 +165,13 @@ export function AdoptionForm() {
                     required
                     value={formData.city}
                     onChange={(e) => setFormData({...formData, city: e.target.value})}
-                    className="w-full bg-white rounded-[15px] px-4 py-3 font-['Urbanist:Regular',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
+                    className="w-full bg-white rounded-[15px] px-4 py-3 font-['Helvetica_Roman',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
                     placeholder="Gómez Palacio"
                   />
                 </div>
 
                 <div>
-                  <label className="block font-['Urbanist:SemiBold',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
+                  <label className="block font-['Helvetica_Roman',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
                     Estado *
                   </label>
                   <input
@@ -179,7 +179,7 @@ export function AdoptionForm() {
                     required
                     value={formData.state}
                     onChange={(e) => setFormData({...formData, state: e.target.value})}
-                    className="w-full bg-white rounded-[15px] px-4 py-3 font-['Urbanist:Regular',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
+                    className="w-full bg-white rounded-[15px] px-4 py-3 font-['Helvetica_Roman',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
                     placeholder="Durango"
                   />
                 </div>
@@ -190,19 +190,19 @@ export function AdoptionForm() {
           {/* Step 2: Housing Information */}
           {currentStep === 2 && (
             <div className="space-y-6">
-              <h2 className="font-['Urbanist:Bold',sans-serif] font-bold text-[28px] text-[#1e1e1e] mb-6">
+              <h2 className="font-['Unbounded',sans-serif] font-semibold text-[28px] text-[#1e1e1e] mb-6">
                 Información de Vivienda
               </h2>
 
               <div>
-                <label className="block font-['Urbanist:SemiBold',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
+                <label className="block font-['Helvetica_Roman',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
                   Tipo de vivienda *
                 </label>
                 <select
                   required
                   value={formData.housingType}
                   onChange={(e) => setFormData({...formData, housingType: e.target.value})}
-                  className="w-full bg-white rounded-[15px] px-4 py-3 font-['Urbanist:Regular',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
+                  className="w-full bg-white rounded-[15px] px-4 py-3 font-['Helvetica_Roman',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
                 >
                   <option value="">Selecciona una opción</option>
                   <option value="casa">Casa</option>
@@ -212,14 +212,14 @@ export function AdoptionForm() {
               </div>
 
               <div>
-                <label className="block font-['Urbanist:SemiBold',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
+                <label className="block font-['Helvetica_Roman',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
                   ¿Eres propietario o rentas? *
                 </label>
                 <select
                   required
                   value={formData.ownsHome}
                   onChange={(e) => setFormData({...formData, ownsHome: e.target.value})}
-                  className="w-full bg-white rounded-[15px] px-4 py-3 font-['Urbanist:Regular',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
+                  className="w-full bg-white rounded-[15px] px-4 py-3 font-['Helvetica_Roman',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
                 >
                   <option value="">Selecciona una opción</option>
                   <option value="propietario">Propietario</option>
@@ -229,14 +229,14 @@ export function AdoptionForm() {
 
               {formData.ownsHome === "renta" && (
                 <div>
-                  <label className="block font-['Urbanist:SemiBold',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
+                  <label className="block font-['Helvetica_Roman',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
                     ¿Tienes permiso del propietario para tener mascotas? *
                   </label>
                   <select
                     required
                     value={formData.landlordPermission}
                     onChange={(e) => setFormData({...formData, landlordPermission: e.target.value})}
-                    className="w-full bg-white rounded-[15px] px-4 py-3 font-['Urbanist:Regular',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
+                    className="w-full bg-white rounded-[15px] px-4 py-3 font-['Helvetica_Roman',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
                   >
                     <option value="">Selecciona una opción</option>
                     <option value="si">Sí</option>
@@ -246,14 +246,14 @@ export function AdoptionForm() {
               )}
 
               <div>
-                <label className="block font-['Urbanist:SemiBold',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
+                <label className="block font-['Helvetica_Roman',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
                   ¿Tienes patio o jardín? *
                 </label>
                 <select
                   required
                   value={formData.hasYard}
                   onChange={(e) => setFormData({...formData, hasYard: e.target.value})}
-                  className="w-full bg-white rounded-[15px] px-4 py-3 font-['Urbanist:Regular',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
+                  className="w-full bg-white rounded-[15px] px-4 py-3 font-['Helvetica_Roman',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
                 >
                   <option value="">Selecciona una opción</option>
                   <option value="si">Sí</option>
@@ -266,19 +266,19 @@ export function AdoptionForm() {
           {/* Step 3: Pet Experience */}
           {currentStep === 3 && (
             <div className="space-y-6">
-              <h2 className="font-['Urbanist:Bold',sans-serif] font-bold text-[28px] text-[#1e1e1e] mb-6">
+              <h2 className="font-['Unbounded',sans-serif] font-semibold text-[28px] text-[#1e1e1e] mb-6">
                 Experiencia con Mascotas
               </h2>
 
               <div>
-                <label className="block font-['Urbanist:SemiBold',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
+                <label className="block font-['Helvetica_Roman',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
                   ¿Has tenido mascotas antes? *
                 </label>
                 <select
                   required
                   value={formData.hadPetsBefore}
                   onChange={(e) => setFormData({...formData, hadPetsBefore: e.target.value})}
-                  className="w-full bg-white rounded-[15px] px-4 py-3 font-['Urbanist:Regular',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
+                  className="w-full bg-white rounded-[15px] px-4 py-3 font-['Helvetica_Roman',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
                 >
                   <option value="">Selecciona una opción</option>
                   <option value="si">Sí</option>
@@ -287,14 +287,14 @@ export function AdoptionForm() {
               </div>
 
               <div>
-                <label className="block font-['Urbanist:SemiBold',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
+                <label className="block font-['Helvetica_Roman',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
                   ¿Tienes otras mascotas actualmente? *
                 </label>
                 <select
                   required
                   value={formData.currentPets}
                   onChange={(e) => setFormData({...formData, currentPets: e.target.value})}
-                  className="w-full bg-white rounded-[15px] px-4 py-3 font-['Urbanist:Regular',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
+                  className="w-full bg-white rounded-[15px] px-4 py-3 font-['Helvetica_Roman',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4]"
                 >
                   <option value="">Selecciona una opción</option>
                   <option value="ninguna">Ninguna</option>
@@ -306,7 +306,7 @@ export function AdoptionForm() {
               </div>
 
               <div>
-                <label className="block font-['Urbanist:SemiBold',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
+                <label className="block font-['Helvetica_Roman',sans-serif] text-[16px] text-[#1e1e1e] mb-2">
                   Cuéntanos sobre tu experiencia con mascotas *
                 </label>
                 <textarea
@@ -314,7 +314,7 @@ export function AdoptionForm() {
                   rows={5}
                   value={formData.petExperience}
                   onChange={(e) => setFormData({...formData, petExperience: e.target.value})}
-                  className="w-full bg-white rounded-[15px] px-4 py-3 font-['Urbanist:Regular',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4] resize-none"
+                  className="w-full bg-white rounded-[15px] px-4 py-3 font-['Helvetica_Roman',sans-serif] text-[16px] outline-none focus:ring-2 focus:ring-[#4074d4] resize-none"
                   placeholder="Describe tu experiencia previa con mascotas, cómo las cuidabas, etc."
                 ></textarea>
               </div>
@@ -324,7 +324,7 @@ export function AdoptionForm() {
           {/* Step 4: Commitment */}
           {currentStep === 4 && (
             <div className="space-y-6">
-              <h2 className="font-['Urbanist:Bold',sans-serif] font-bold text-[28px] text-[#1e1e1e] mb-6">
+              <h2 className="font-['Unbounded',sans-serif] font-semibold text-[28px] text-[#1e1e1e] mb-6">
                 Compromiso de Adopción
               </h2>
 
@@ -332,10 +332,10 @@ export function AdoptionForm() {
                 <div className="flex items-start gap-3">
                   <AlertCircle className="w-6 h-6 text-[#c8566e] flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="font-['Urbanist:Bold',sans-serif] font-bold text-[18px] text-[#1e1e1e] mb-2">
+                    <h3 className="font-['Unbounded',sans-serif] font-semibold text-[18px] text-[#1e1e1e] mb-2">
                       Importante
                     </h3>
-                    <p className="font-['Urbanist:Regular',sans-serif] text-[14px] text-[#1e1e1e]">
+                    <p className="font-['Helvetica_Roman',sans-serif] text-[14px] text-[#1e1e1e]">
                       Al adoptar a {pet.name}, te comprometes a proporcionarle un hogar amoroso de por vida. 
                       Lee cuidadosamente cada punto antes de continuar.
                     </p>
@@ -352,7 +352,7 @@ export function AdoptionForm() {
                     onChange={(e) => setFormData({...formData, agreeToSterilize: e.target.checked})}
                     className="mt-1 w-5 h-5 accent-[#4074d4]"
                   />
-                  <span className="font-['Urbanist:Regular',sans-serif] text-[16px] text-[#1e1e1e]">
+                  <span className="font-['Helvetica_Roman',sans-serif] text-[16px] text-[#1e1e1e]">
                     Me comprometo a esterilizar a la mascota si aún no lo está (aplica para cachorros)
                   </span>
                 </label>
@@ -365,7 +365,7 @@ export function AdoptionForm() {
                     onChange={(e) => setFormData({...formData, agreeToVaccinate: e.target.checked})}
                     className="mt-1 w-5 h-5 accent-[#4074d4]"
                   />
-                  <span className="font-['Urbanist:Regular',sans-serif] text-[16px] text-[#1e1e1e]">
+                  <span className="font-['Helvetica_Roman',sans-serif] text-[16px] text-[#1e1e1e]">
                     Me comprometo a mantener al día las vacunas y controles veterinarios
                   </span>
                 </label>
@@ -378,7 +378,7 @@ export function AdoptionForm() {
                     onChange={(e) => setFormData({...formData, agreeToFollow: e.target.checked})}
                     className="mt-1 w-5 h-5 accent-[#4074d4]"
                   />
-                  <span className="font-['Urbanist:Regular',sans-serif] text-[16px] text-[#1e1e1e]">
+                  <span className="font-['Helvetica_Roman',sans-serif] text-[16px] text-[#1e1e1e]">
                     Acepto el seguimiento de AdoptApp durante los primeros meses
                   </span>
                 </label>
@@ -391,7 +391,7 @@ export function AdoptionForm() {
                     onChange={(e) => setFormData({...formData, agreeToTerms: e.target.checked})}
                     className="mt-1 w-5 h-5 accent-[#4074d4]"
                   />
-                  <span className="font-['Urbanist:Regular',sans-serif] text-[16px] text-[#1e1e1e]">
+                  <span className="font-['Helvetica_Roman',sans-serif] text-[16px] text-[#1e1e1e]">
                     He leído y acepto los términos y condiciones de adopción
                   </span>
                 </label>
@@ -405,14 +405,14 @@ export function AdoptionForm() {
               <button
                 type="button"
                 onClick={() => setCurrentStep(currentStep - 1)}
-                className="flex-1 bg-white text-[#1e1e1e] font-['Urbanist:Bold',sans-serif] font-bold text-[18px] py-4 rounded-[15px] hover:bg-[#f5f5f5] transition-colors"
+                className="flex-1 bg-white text-[#1e1e1e] font-['Helvetica_Roman',sans-serif] font-bold text-[18px] py-4 rounded-[15px] hover:bg-[#f5f5f5] transition-colors"
               >
                 Anterior
               </button>
             )}
             <button
               type="submit"
-              className="flex-1 bg-[#4074d4] text-white font-['Urbanist:Bold',sans-serif] font-bold text-[18px] py-4 rounded-[15px] hover:bg-[#3563b8] transition-colors shadow-lg"
+              className="flex-1 bg-[#4074d4] text-white font-['Helvetica_Roman',sans-serif] font-bold text-[18px] py-4 rounded-[15px] hover:bg-[#3563b8] transition-colors shadow-lg"
             >
               {currentStep === 4 ? 'Enviar solicitud' : 'Siguiente'}
             </button>

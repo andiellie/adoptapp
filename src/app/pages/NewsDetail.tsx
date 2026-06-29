@@ -11,12 +11,12 @@ export function NewsDetail() {
     return (
       <div className="min-h-screen bg-white pt-[70px] sm:pt-[80px] lg:pt-[90px] flex items-center justify-center">
         <div className="text-center">
-          <h1 className="font-['Urbanist:Bold',sans-serif] text-[48px] text-[#1e1e1e] mb-4">
+          <h1 className="font-['Unbounded',sans-serif] font-normal text-[48px] text-[#1e1e1e] mb-4">
             Noticia no encontrada
           </h1>
           <button
             onClick={() => navigate("/noticias")}
-            className="bg-[#4074d4] text-white px-8 py-3 rounded-[15px] font-['Urbanist:Bold',sans-serif] text-[18px] hover:bg-[#3064c4] transition-colors"
+            className="bg-[#4074d4] text-white px-8 py-3 rounded-[15px] font-['Helvetica_Roman',sans-serif] text-[18px] hover:bg-[#3064c4] transition-colors"
           >
             Volver a Noticias
           </button>
@@ -51,11 +51,11 @@ export function NewsDetail() {
 
   return (
     <div className="min-h-screen bg-white pt-[70px] sm:pt-[80px] lg:pt-[90px]">
-      <div className="max-w-[1200px] mx-auto px-4 md:px-8 py-12">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-[112px] py-12">
         {/* Back Button */}
         <button
           onClick={() => navigate("/noticias")}
-          className="flex items-center gap-2 text-[#4074d4] font-['Urbanist:Bold',sans-serif] text-[16px] mb-8 hover:underline transition-colors"
+          className="flex items-center gap-2 text-[#4074d4] font-['Helvetica_Roman',sans-serif] text-[16px] mb-8 hover:underline transition-colors"
         >
           <ArrowLeft className="w-5 h-5" />
           Volver a Noticias
@@ -63,11 +63,11 @@ export function NewsDetail() {
 
         {/* Article Header */}
         <div className="mb-8">
-          <span className="inline-block bg-[#4074d4] text-white px-6 py-2 rounded-full text-[14px] font-['Urbanist:SemiBold',sans-serif] mb-4">
+          <span className="inline-block bg-[#4074d4] text-white px-6 py-2 rounded-full text-[14px] font-['Helvetica_Roman',sans-serif] mb-4">
             {article.category}
           </span>
           
-          <h1 className="font-['Urbanist:Bold',sans-serif] text-[32px] md:text-[48px] text-[#1e1e1e] mb-6 leading-tight">
+          <h1 className="font-['Unbounded',sans-serif] font-normal text-[32px] md:text-[48px] text-[#1e1e1e] mb-6 leading-tight">
             {article.title}
           </h1>
 
@@ -75,13 +75,13 @@ export function NewsDetail() {
           <div className="flex flex-wrap gap-6 mb-6 text-[#666]">
             <div className="flex items-center gap-2">
               <Calendar className="w-5 h-5" />
-              <span className="font-['Urbanist:Medium',sans-serif] text-[16px]">
+              <span className="font-['Helvetica_Roman',sans-serif] text-[16px]">
                 {formatDate(article.date)}
               </span>
             </div>
             <div className="flex items-center gap-2">
               <User className="w-5 h-5" />
-              <span className="font-['Urbanist:Medium',sans-serif] text-[16px]">
+              <span className="font-['Helvetica_Roman',sans-serif] text-[16px]">
                 {article.author}
               </span>
             </div>
@@ -92,7 +92,7 @@ export function NewsDetail() {
             {article.tags.map((tag, index) => (
               <span
                 key={index}
-                className="bg-[#ebe8d6] text-[#1e1e1e] px-4 py-1 rounded-full text-[12px] font-['Urbanist:Medium',sans-serif] flex items-center gap-1"
+                className="bg-[#ebe8d6] text-[#1e1e1e] px-4 py-1 rounded-full text-[12px] font-['Helvetica_Roman',sans-serif] flex items-center gap-1"
               >
                 <Tag className="w-3 h-3" />
                 {tag}
@@ -102,7 +102,7 @@ export function NewsDetail() {
 
           {/* Share Buttons */}
           <div className="flex items-center gap-4 flex-wrap">
-            <span className="font-['Urbanist:SemiBold',sans-serif] text-[16px] text-[#1e1e1e]">
+            <span className="font-['Helvetica_Roman',sans-serif] text-[16px] text-[#1e1e1e]">
               Compartir:
             </span>
             <button
@@ -150,14 +150,14 @@ export function NewsDetail() {
                 const parts = paragraph.split('\n');
                 return (
                   <div key={index} className="mb-6">
-                    <p className="font-['Urbanist:Regular',sans-serif] text-[18px] text-[#1e1e1e] leading-relaxed mb-3">
+                    <p className="font-['Helvetica_Roman',sans-serif] text-[18px] text-[#1e1e1e] leading-relaxed mb-3">
                       {parts[0]}
                     </p>
                     <ul className="list-none space-y-2 ml-4">
                       {parts.slice(1).map((item, itemIndex) => (
                         <li
                           key={itemIndex}
-                          className="font-['Urbanist:Regular',sans-serif] text-[18px] text-[#1e1e1e] leading-relaxed flex items-start gap-2"
+                          className="font-['Helvetica_Roman',sans-serif] text-[18px] text-[#1e1e1e] leading-relaxed flex items-start gap-2"
                         >
                           <span className="text-[#4074d4] font-bold">•</span>
                           <span>{item.replace('•', '').trim()}</span>
@@ -171,7 +171,7 @@ export function NewsDetail() {
               return (
                 <p
                   key={index}
-                  className="font-['Urbanist:Regular',sans-serif] text-[18px] text-[#1e1e1e] leading-relaxed mb-6"
+                  className="font-['Helvetica_Roman',sans-serif] text-[18px] text-[#1e1e1e] leading-relaxed mb-6"
                 >
                   {paragraph}
                 </p>
@@ -183,7 +183,7 @@ export function NewsDetail() {
         {/* Related News */}
         {relatedNews.length > 0 && (
           <div className="mb-12">
-            <h2 className="font-['Urbanist:Bold',sans-serif] text-[36px] text-[#1e1e1e] mb-8">
+            <h2 className="font-['Unbounded',sans-serif] font-normal text-[36px] text-[#1e1e1e] mb-8">
               Noticias Relacionadas
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -201,13 +201,13 @@ export function NewsDetail() {
                     />
                   </div>
                   <div className="p-6">
-                    <span className="inline-block bg-[#ebe8d6] text-[#1e1e1e] px-3 py-1 rounded-full text-[12px] font-['Urbanist:SemiBold',sans-serif] mb-3">
+                    <span className="inline-block bg-[#ebe8d6] text-[#1e1e1e] px-3 py-1 rounded-full text-[12px] font-['Helvetica_Roman',sans-serif] mb-3">
                       {news.category}
                     </span>
-                    <h3 className="font-['Urbanist:Bold',sans-serif] text-[18px] text-[#1e1e1e] mb-2 line-clamp-2">
+                    <h3 className="font-['Unbounded',sans-serif] font-normal text-[18px] text-[#1e1e1e] mb-2 line-clamp-2">
                       {news.title}
                     </h3>
-                    <p className="font-['Urbanist:Regular',sans-serif] text-[14px] text-[#666] line-clamp-2">
+                    <p className="font-['Helvetica_Roman',sans-serif] text-[14px] text-[#666] line-clamp-2">
                       {news.excerpt}
                     </p>
                   </div>
@@ -219,15 +219,15 @@ export function NewsDetail() {
 
         {/* Call to Action */}
         <div className="bg-gradient-to-r from-[#4074d4] to-[#5084e4] rounded-[30px] p-12 text-center text-white shadow-lg">
-          <h3 className="font-['Urbanist:Bold',sans-serif] text-[32px] mb-4">
+          <h3 className="font-['Unbounded',sans-serif] font-normal text-[32px] mb-4">
             ¿Te gustó esta noticia?
           </h3>
-          <p className="font-['Urbanist:Regular',sans-serif] text-[18px] mb-6 max-w-[600px] mx-auto">
+          <p className="font-['Helvetica_Roman',sans-serif] text-[18px] mb-6 max-w-[600px] mx-auto">
             Mantente informado sobre el bienestar animal y encuentra a tu compañero perfecto en AdoptApp.
           </p>
           <Link
             to="/adopta"
-            className="inline-block bg-white text-[#4074d4] px-8 py-4 rounded-[15px] font-['Urbanist:Bold',sans-serif] text-[18px] hover:bg-[#f5f5f5] transition-colors"
+            className="inline-block bg-white text-[#4074d4] px-8 py-4 rounded-[15px] font-['Helvetica_Roman',sans-serif] text-[18px] hover:bg-[#f5f5f5] transition-colors"
           >
             Explorar Mascotas
           </Link>

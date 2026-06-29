@@ -39,9 +39,9 @@ const requirements = [
 export function Requisitos() {
   return (
     <div className="min-h-screen bg-white pt-[70px] sm:pt-[80px] lg:pt-[90px]">
-      <div className="max-w-[1600px] mx-auto px-8 py-12">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-[112px] py-12">
         {/* Header */}
-        <h1 className="font-['Unbounded:Medium',sans-serif] font-medium text-[72px] text-[#1e1e1e] text-center mb-16 uppercase">
+        <h1 className="font-['Unbounded',sans-serif] font-normal text-[60px] text-[#1e1e1e] text-center mb-16">
           Requisitos para Adoptar
         </h1>
 
@@ -59,7 +59,7 @@ export function Requisitos() {
                       <req.icon className="w-7 h-7 text-white" />
                     </div>
                     <div className="flex-1">
-                      <p className="font-['Urbanist:SemiBold',sans-serif] font-semibold text-[22px] text-[#1e1e1e] leading-relaxed">
+                      <p className="font-['Helvetica_Roman',sans-serif] font-semibold text-[22px] text-[#1e1e1e] leading-relaxed">
                         {req.title}
                       </p>
                     </div>
@@ -70,15 +70,15 @@ export function Requisitos() {
 
             {/* Additional Info */}
             <div className="mt-8 bg-[#fff5f0] rounded-[30px] p-8">
-              <h3 className="font-['Urbanist:Bold',sans-serif] font-bold text-[24px] text-[#1e1e1e] mb-4">
+              <h3 className="font-['Unbounded',sans-serif] font-semibold text-[24px] text-[#1e1e1e] mb-4">
                 Importante
               </h3>
-              <p className="font-['Urbanist:Regular',sans-serif] text-[18px] text-[#1e1e1e] mb-4 leading-relaxed">
+              <p className="font-['Helvetica_Roman',sans-serif] text-[18px] text-[#1e1e1e] mb-4 leading-relaxed">
                 Todos los requisitos son necesarios para garantizar el bienestar de las mascotas. 
                 El proceso de adopción incluye una visita domiciliaria para verificar que el hogar 
                 sea adecuado para la mascota.
               </p>
-              <p className="font-['Urbanist:SemiBold',sans-serif] text-[16px] text-[#c8566e]">
+              <p className="font-['Helvetica_Roman',sans-serif] text-[16px] text-[#c8566e]">
                 El incumplimiento de estos requisitos puede resultar en la devolución de la mascota al refugio.
               </p>
             </div>
@@ -120,20 +120,20 @@ export function Requisitos() {
             {/* Info Cards */}
             <div className="mt-12 space-y-4">
               <div className="bg-[#f9fcf3] rounded-[20px] p-6">
-                <h4 className="font-['Urbanist:Bold',sans-serif] font-bold text-[20px] text-[#1e1e1e] mb-2">
+                <h4 className="font-['Unbounded',sans-serif] font-semibold text-[20px] text-[#1e1e1e] mb-2">
                   Proceso de verificación
                 </h4>
-                <p className="font-['Urbanist:Regular',sans-serif] text-[16px] text-[#1e1e1e]">
+                <p className="font-['Helvetica_Roman',sans-serif] text-[16px] text-[#1e1e1e]">
                   Revisaremos tu solicitud en un plazo de 2-3 días hábiles. Si cumples con todos 
                   los requisitos, coordinaremos una visita domiciliaria.
                 </p>
               </div>
 
               <div className="bg-[#e6faff] rounded-[20px] p-6">
-                <h4 className="font-['Urbanist:Bold',sans-serif] font-bold text-[20px] text-[#1e1e1e] mb-2">
+                <h4 className="font-['Unbounded',sans-serif] font-semibold text-[20px] text-[#1e1e1e] mb-2">
                   Apoyo post-adopción
                 </h4>
-                <p className="font-['Urbanist:Regular',sans-serif] text-[16px] text-[#1e1e1e]">
+                <p className="font-['Helvetica_Roman',sans-serif] text-[16px] text-[#1e1e1e]">
                   Te acompañamos durante todo el proceso. Ofrecemos asesoría gratuita y seguimiento 
                   para asegurar una adaptación exitosa.
                 </p>
@@ -147,20 +147,20 @@ export function Requisitos() {
           <h2 className="font-['Unbounded:Medium',sans-serif] font-medium text-[36px] text-[#1e1e1e] mb-6">
             ¿Cumples con los requisitos?
           </h2>
-          <p className="font-['Urbanist:SemiBold',sans-serif] text-[20px] text-[#666] mb-8 max-w-2xl mx-auto">
+          <p className="font-['Helvetica_Roman',sans-serif] text-[20px] text-[#666] mb-8 max-w-2xl mx-auto">
             Si estás listo para darle un hogar a una mascota, explora nuestro catálogo y 
             encuentra a tu compañero ideal.
           </p>
           <div className="flex gap-4 justify-center">
             <a
               href="/adopta"
-              className="bg-[#4074d4] text-white font-['Urbanist:Bold',sans-serif] font-bold text-[20px] px-10 py-4 rounded-[20px] hover:bg-[#3563b8] transition-colors shadow-lg"
+              className="bg-[#4074d4] text-white font-['Helvetica_Roman',sans-serif] font-bold text-[20px] px-10 py-4 rounded-[20px] hover:bg-[#3563b8] transition-colors shadow-lg"
             >
               Ver mascotas disponibles
             </a>
             <a
               href="/contacto"
-              className="bg-white border-2 border-[#4074d4] text-[#4074d4] font-['Urbanist:Bold',sans-serif] font-bold text-[20px] px-10 py-4 rounded-[20px] hover:bg-[#f5f5f5] transition-colors"
+              className="bg-white border-2 border-[#4074d4] text-[#4074d4] font-['Helvetica_Roman',sans-serif] font-bold text-[20px] px-10 py-4 rounded-[20px] hover:bg-[#f5f5f5] transition-colors"
             >
               Contactar con dudas
             </a>

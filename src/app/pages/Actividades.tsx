@@ -26,9 +26,9 @@ export function Actividades() {
 
   return (
     <div className="min-h-screen bg-white pt-[70px] sm:pt-[80px] lg:pt-[90px]">
-      <div className="max-w-[1600px] mx-auto px-8 py-12">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-[112px] py-12">
         {/* Header */}
-        <h1 className="font-['Unbounded:Medium',sans-serif] font-medium text-[72px] text-[#1e1e1e] text-center mb-16 uppercase">
+        <h1 className="font-['Unbounded',sans-serif] font-normal text-[60px] text-[#1e1e1e] text-center mb-16">
           Pasos para adoptar
         </h1>
 
@@ -61,7 +61,7 @@ export function Actividades() {
                             <img src={imgDog} alt="Dog" className="w-full h-full object-contain" />
                           </div>
                           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-white px-3 py-1 rounded-full shadow-md">
-                            <span className="font-['Urbanist:Bold',sans-serif] text-[12px] text-black tracking-wider">
+                            <span className="font-['Helvetica_Roman',sans-serif] text-[12px] text-black tracking-wider">
                               {step.badge}
                             </span>
                           </div>
@@ -72,10 +72,10 @@ export function Actividades() {
                 </div>
 
                 {/* Text */}
-                <h3 className="font-['Urbanist:Bold',sans-serif] font-bold text-[20px] text-[#1e1e1e] mb-4">
+                <h3 className="font-['Unbounded',sans-serif] font-semibold text-[20px] text-[#1e1e1e] mb-4">
                   {step.title}
                 </h3>
-                <p className="font-['Urbanist:Regular',sans-serif] text-[16px] text-[#1e1e1e] leading-relaxed max-w-xs mx-auto">
+                <p className="font-['Helvetica_Roman',sans-serif] text-[16px] text-[#1e1e1e] leading-relaxed max-w-xs mx-auto">
                   {step.description}
                 </p>
               </div>
@@ -89,7 +89,7 @@ export function Actividades() {
             <h2 className="font-['Unbounded:Medium',sans-serif] font-medium text-[32px] text-[#1e1e1e] mb-6">
               ¿Por qué adoptar?
             </h2>
-            <ul className="space-y-4 font-['Urbanist:Regular',sans-serif] text-[18px] text-[#1e1e1e]">
+            <ul className="space-y-4 font-['Helvetica_Roman',sans-serif] text-[18px] text-[#1e1e1e]">
               <li className="flex items-start">
                 <span className="text-[#4074d4] text-[24px] mr-3">•</span>
                 <span>Salvas una vida y le das una segunda oportunidad</span>
@@ -117,7 +117,7 @@ export function Actividades() {
             <h2 className="font-['Unbounded:Medium',sans-serif] font-medium text-[32px] text-[#1e1e1e] mb-6">
               Después de la adopción
             </h2>
-            <ul className="space-y-4 font-['Urbanist:Regular',sans-serif] text-[18px] text-[#1e1e1e]">
+            <ul className="space-y-4 font-['Helvetica_Roman',sans-serif] text-[18px] text-[#1e1e1e]">
               <li className="flex items-start">
                 <span className="text-[#c8566e] text-[24px] mr-3">•</span>
                 <span>Seguimiento mensual durante los primeros 3 meses</span>
@@ -147,12 +147,12 @@ export function Actividades() {
           <h2 className="font-['Unbounded:Medium',sans-serif] font-medium text-[40px] text-white mb-4">
             ¿Listo para adoptar?
           </h2>
-          <p className="font-['Urbanist:SemiBold',sans-serif] text-[20px] text-white mb-8 max-w-2xl mx-auto">
+          <p className="font-['Helvetica_Roman',sans-serif] text-[20px] text-white mb-8 max-w-2xl mx-auto">
             Miles de mascotas están esperando por ti. Encuentra a tu compañero perfecto hoy.
           </p>
           <a
             href="/adopta"
-            className="inline-block bg-white text-[#4074d4] font-['Urbanist:Bold',sans-serif] font-bold text-[24px] px-12 py-4 rounded-[20px] hover:shadow-xl transition-shadow"
+            className="inline-block bg-white text-[#4074d4] font-['Helvetica_Roman',sans-serif] font-bold text-[24px] px-12 py-4 rounded-[20px] hover:shadow-xl transition-shadow"
           >
             Ver mascotas disponibles
           </a>
