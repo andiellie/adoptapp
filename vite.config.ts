@@ -14,6 +14,9 @@ export default defineConfig({
     alias: {
       // Alias @ to the src directory
       '@': path.resolve(__dirname, './src'),
+      // Figma Make resolves figma:asset/<hash> imports to its own asset
+      // store; locally those same files live in src/assets.
+      'figma:asset': path.resolve(__dirname, './src/assets'),
     },
   },
 
